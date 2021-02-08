@@ -2,10 +2,10 @@
 
 [Live](https://ronyahmed1200.github.io/my-notes/)
 
-## it is my notes webpage so that i can add my notes in here.
-## THE best part of this website is my notes doesn't disappear when i refresh the website. 
+ it is my notes webpage so that i can add my notes in here.
+ THE best part of this website is my notes doesn't disappear when i refresh the website. 
 
-### I have made it with -
+## I have made it with -
     *html
     *css
     *javascript
