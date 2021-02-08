@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #ccc9dc;
+  --body-color: #002626;
+  --header-bg: #0e4749;
+  --header-color: #fff;
+  --list-bg: #4ecdc4;
+  --note-color: #0e4749;
+  --button-bg: #ff5666;
+  --button-color: #ccc9dc;
+  --icon-bg: #df7b4a;
+  --icon-color: #f7f7f7;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  /* width: 95%; */
+  margin: auto;
+  padding: 1rem 3rem;
+}
+
+/* ----------------- header ----------------- */
+header {
+  background-color: var(--header-bg);
+  color: var(--header-color);
+  height: 70px;
+}
+
+h1 {
+  color: var(--body-bg);
+}
+
+/* ----------------- note section ----------------- */
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.note_sec .note {
+  background-color: var(--list-bg);
+  color: var(--note-color);
+  min-height: 300px;
+  width: 300px;
+  padding: 2rem 3rem;
+  margin: 3rem;
+}
+
+.note_sec .note-icons-div {
+  position: relative;
+}
+.note_sec .note-icons {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+.note-icons i {
+  background-color: var(--icon-bg);
+  color: var(--icon-color);
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.note-icons i:hover {
+  color: var(--icon-bg);
+  background-color: var(--icon-color);
+}
+
+.main,
+textarea {
+  background-color: transparent;
+  color: var(--note-color);
+  border: none;
+  outline: none;
+  font-size: 2.2rem;
+  width: 250px;
+  min-height: 200px;
+  margin-top: 50px;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+.hidden {
+  display: none;
+}

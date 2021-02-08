@@ -1,0 +1,94 @@
+header {
+  position: relative;
+}
+/* Main Styles */
+.button {
+  display: block;
+  background-color: #8a6b92;
+  color: #ebeee4;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span,
+.button .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+.button span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button span:after {
+  content: "";
+  background-color: #e7d6d4;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+.button .icon {
+  width: 28%;
+  right: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.button .icon .fa {
+  font-size: 20px;
+  vertical-align: middle;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+.button .icon .fa-plus {
+  height: 22px;
+}
+.button .icon .fa-check {
+  display: none;
+}
+.button.success span,
+.button:hover span {
+  left: -72%;
+  opacity: 0;
+}
+.button.success .icon,
+.button:hover .icon {
+  width: 100%;
+}
+.button.success .icon .fa,
+.button:hover .icon .fa {
+  font-size: 30px;
+}
+.button.success {
+  background-color: #27ae60;
+}
+.button.success .icon .fa-plus {
+  display: none;
+}
+.button.success .icon .fa-check {
+  display: inline-block;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:hover .icon .fa-plus {
+  height: 30px;
+}
+.button:active {
+  opacity: 1;
+}
