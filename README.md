@@ -1,5 +1,7 @@
 # my-notes
 
+![img-of-love-calculator](https://imgur.com/cA07Xpc.png)
+
 [Live](https://ronyahmed1200.github.io/my-notes/)
 
  it is my notes webpage so that i can add my notes in here.
